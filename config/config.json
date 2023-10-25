@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "crm-manager",
+    "password": "strong#password",
+    "database": "crm-dev",
+    "host": "13.212.154.57",
+    "dialect": "postgres",
+    "port": "30005"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
