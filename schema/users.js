@@ -3,15 +3,15 @@ const generators = require("../generators/index");
 
 const userSchema = {
   email: generators.email,
-  display_name: generators.name,
+  displayName: generators.name,
   password: generators.password,
   avatar: generators.avatar,
-  referral_code: (size) => generators.code(size, 8),
-  otp_code: (size) => generators.code(size, 8),
+  referralCode: (size) => generators.code(size, 8),
+  otpCode: (size) => generators.code(size, 8),
   iss: "user_good",
-  is_seed: true,
-  created_at: new Date(),
-  updated_at: new Date(),
+  isSeed: true,
+  createdAt: new Date(),
+  updatedAt: new Date(),
 };
 
 module.exports = class Users extends AbstractSchema {

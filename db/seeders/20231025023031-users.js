@@ -5,7 +5,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     try {
       const users = new Users();
-      await queryInterface.addColumn("users", "is_seed", Sequelize.BOOLEAN, {
+      await queryInterface.addColumn("users", "isSeed", Sequelize.BOOLEAN, {
         defaultValue: false,
       });
       const result = await queryInterface.bulkInsert(
@@ -21,6 +21,6 @@ module.exports = {
     await queryInterface.bulkDelete("users", {
       is_seed: true,
     });
-    await queryInterface.removeColumn("users", "is_seed");
+    await queryInterface.removeColumn("users", "isSeed");
   },
 };
