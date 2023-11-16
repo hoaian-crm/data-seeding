@@ -5,7 +5,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     queryInterface.bulkInsert("roles", [
       {
-        id: 0,
+        id: 2,
         createdAt: new Date(),
         updatedAt: new Date(),
         name: "User role default",
@@ -23,10 +23,10 @@ module.exports = {
 
   async down(queryInterface, Sequelize) {
     queryInterface.bulkDelete("roles", {
-      id: 0,
+      id: 1,
     });
     queryInterface.bulkDelete("roles", {
-      id: 1,
+      id: 2,
     });
   },
 };
